@@ -7,7 +7,7 @@ The password is not translated to a common encoding before being used as the key
 
 By default, the program is in encryption mode. For decryption mode, mention the -d option.
 
-RB1 is based on concepts from RC5 and RC6. There are two other numbers in the program name: the number of words in a block and the number of bits in a word. For example, rb1-2-64 and rb1-4-32 both work with 128-bit blocks but make completely different results.
+RB1 is based on concepts from RC5 and RC6. The number after the dash specifies how many bits per word the program uses. Programs with different word lengths can be made to work with blocks of the same size by changing the number of words used, but they will still generate completely different results.
 
 The block cipher mode of operation used is actually two-fold. First the data is encrypted with CTR mode, then it is encrypted with ECB mode. The encryption with ECB means that the nonce for CTR does not necessarily need to be changed for every message, though you should change it anyway.
 
@@ -16,8 +16,9 @@ h: output help and exit <br />
 d: decryption mode <br />
 r: number of rounds to encrypt file data <br />
 x: password and nonce input are interpreted as hexadecimal <br />
+b: number of words per block <br />
 
-The number of rounds does not need to be provided when decrypting a file.
+The number of rounds and words per block do not need to be provided when decrypting a file.
 
 You should enter information you can't remember to be used as the nonce. Pressing random keys on your keyboard should work fine. :)
 
@@ -33,6 +34,7 @@ all nubmers are word-sized, big-endian, binary
 null-terminated program name string <br />
 file version number <br />
 number of rounds <br />
+words per block <br />
 nonce block <br />
 password check <br />
 encrypted data <br />
