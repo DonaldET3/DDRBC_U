@@ -1,6 +1,8 @@
 # DDRBC_U
 Data Dependent Rotation Block Cipher for Unix
 
+**This program will be rewritten soon. The new program will not be complatible with this one.**
+
 This program encrypts and decrypts files. The password and nonce are input through standard input. Two filenames are specified on the command line. The first is the input file and the second is the output file.
 
 The password is not translated to a common encoding before being used as the key, so the text encoding used by the encrypting computer and the decrypting computer must be the same. It is recommended that the system locale be set to one that uses UTF-8 for maximum portability. GNU/Linux is set to UTF-8 by default. FreeBSD is set to ASCII by default, which works with UTF-8 if you use an American keyboard.
