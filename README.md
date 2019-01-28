@@ -24,8 +24,6 @@ The number of rounds and words per block do not need to be provided when decrypt
 
 You should enter information you can't remember to be used as the nonce. Pressing random keys on your keyboard should work fine. :)
 
-The password and nonce are repeated to you through standard output to ensure the text encoding was understood correctly.
-
 When decrypting, the file is not checked for errors. A hash should be computed seperately to verify the integrity of the data.
 
 
