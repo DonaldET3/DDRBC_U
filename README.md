@@ -9,7 +9,7 @@ The password is not translated to a common encoding before being used as the key
 
 By default, the program is in encryption mode. For decryption mode, mention the -d option.
 
-RB1 is based on concepts from RC5 and RC6. The number after the dash specifies how many bits per word the program uses. Programs with different word lengths can be made to work with blocks of the same size by changing the number of words used, but they will still generate completely different results.
+These ciphers are based on concepts from RC5 and RC6. The number after the dash specifies how many bits per word the program uses. Programs with different word lengths can be made to work with blocks of the same size by changing the number of words used, but they will still generate completely different results.
 
 The block cipher mode of operation used is actually two-fold. First the data is encrypted with CTR mode, then it is encrypted with ECB mode. The encryption with ECB means that the nonce for CTR does not necessarily need to be changed for every message, though you should change it anyway.
 
