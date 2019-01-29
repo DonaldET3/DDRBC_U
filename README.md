@@ -1,7 +1,7 @@
 # DDRBC_U
 Data Dependent Rotation Block Cipher for Unix
 
-You should review the source code of this program before using it with important files or a system that contains important files. You take all responsibility for what happens when you use this program.
+You should review the source code of this program before using it with important files or a system that contains important files. You take all responsibility for what happens when you use this program. If you do decide to use this program, save a copy of the source code; the code in this repository may be replaced by an entirely incompatible program at any time.
 
 This program encrypts and decrypts files. The password and nonce are input through standard input. Two filenames are specified on the command line. The first is the input file and the second is the output file.
 
