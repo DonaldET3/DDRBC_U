@@ -607,6 +607,8 @@ int main(int argc, char **argv)
 {
  int c, mode = 1;
  struct options opts;
+ extern char *optarg;
+ extern int opterr, optind, optopt;
 
  /* prepare default settings */
  opts.r = 20;
